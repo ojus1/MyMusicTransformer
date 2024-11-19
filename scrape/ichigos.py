@@ -106,5 +106,5 @@ def download(link, i):
 
 links = parse_pages()
 print("Downloading MIDIs")
-Parallel(n_jobs=-1, prefer="processes")(delayed(download)(l, i) for i, l in tqdm(enumerate(links), total=len(links)))
+Parallel(n_jobs=32, prefer="processes")(delayed(download)(l, i) for i, l in tqdm(enumerate(links), total=len(links)))
 

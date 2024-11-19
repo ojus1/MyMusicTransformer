@@ -2,3 +2,6 @@ data/
 *.zip
 dump/
 .vscode
+.DS_Store
+annotations.csv
+__pycache__/
